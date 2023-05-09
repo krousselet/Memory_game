@@ -1,0 +1,68 @@
+/* GENERAL */
+
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    min-height: 100vh;
+}
+
+.main-title {
+    margin: 5px 10px;
+    text-align: center;
+    letter-spacing: 10px;
+    line-height: 75px;
+}
+
+.sub-title {
+    padding: 10vh 0;
+    margin: 5px 10px;
+    text-align: center;
+    letter-spacing: 10px;
+    line-height: 50px;
+}
+
+.difficulty {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 7vh;
+}
+
+.all-buttons {
+    height: 40px;
+    width: 50%;
+}
+
+
+.easy-cards, .medium-cards, .hard-cards, .mastermind-cards, .card {
+    display: none;
+}
+
+.easy-cards-active, .medium-cards-active, .hard-cards-active, .mastermind-cards-active {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    min-width: 90%;
+    min-height: 50vh;
+    gap: 10px;
+}
+
+.card {
+    display: flex;
+    width: 86px;
+    height: 110px;
+    border: 1px solid grey;
+    background-image: url(./ressources/Backcard.jpg);
+    background-position: center center;
+    background-size: cover;
+}
